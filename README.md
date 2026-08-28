@@ -14,7 +14,7 @@ The workflow uses [DevTools](https://github.com/NhanAZ/DevTools) to set up Pocke
 
 ## When to use a virion
 
-This template is intentionally a normal plugin with no virion. Do not add `devtools.yml` or `virions/` unless the plugin intentionally shares a local development package. When that is needed, follow DevTools' [shared virion guide](https://github.com/NhanAZ/DevTools/blob/v0.2.0/docs/shared-virions.md).
+This template is intentionally a normal plugin with no virion. Do not add `devtools.yml` or `virions/` unless the plugin intentionally shares a local development package. When that is needed, follow DevTools' [shared virion guide](https://github.com/NhanAZ/DevTools/blob/v1.0.0/docs/shared-virions.md).
 
 ## Local server development
 
