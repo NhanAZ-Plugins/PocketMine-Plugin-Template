@@ -1,0 +1,22 @@
+name: Build plugin PHAR
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    uses: NhanAZ-Plugins/DevTools/.github/workflows/build-plugin.yml@v0.2.0
+    with:
+      php-version: '8.1'
+      retention-days: 14
+    permissions:
+      contents: read
