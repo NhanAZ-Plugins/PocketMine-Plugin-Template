@@ -7,7 +7,7 @@ A minimal PocketMine-MP plugin repository for people who want a working PHAR bui
 1. Use **Use this template** to create your plugin repository.
 2. Edit `plugin.yml`: change the plugin name, version, description, author, and main namespace.
 3. Edit `src/Main.php` to implement your plugin.
-4. Push the changes.
+4. Commit and push the changes.
 5. Open **Actions**, select **Build plugin PHAR**, open the run, and download the artifact.
 
 The workflow uses [DevTools](https://github.com/NhanAZ-Plugins/DevTools) to set up PocketMine PHP, build a standalone PHAR, and upload exactly one artifact. No PocketMine server source checkout or project-local Composer installation is required.
