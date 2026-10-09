@@ -1,6 +1,6 @@
 # PocketMine Plugin Template
 
-A minimal PocketMine-MP plugin repository for people who want a working PHAR build without setting up PHP or Composer locally.
+A minimal Axolotl plugin repository for people who want a working PHAR build without setting up PHP or Composer locally.
 
 ## Start here
 
@@ -10,12 +10,14 @@ A minimal PocketMine-MP plugin repository for people who want a working PHAR bui
 4. Commit and push the changes.
 5. Open **Actions**, select **Build plugin PHAR**, open the run, and download the artifact.
 
-The workflow uses [DevTools](https://github.com/NhanAZ/DevTools) to set up PocketMine PHP, build a standalone PHAR, and upload exactly one artifact. No PocketMine server source checkout or project-local Composer installation is required.
+The workflow uses [DevTools v2.0.0](https://github.com/NhanAZ/DevTools/releases/tag/v2.0.0) to set up Axolotl PHP, build a standalone PHAR, and upload exactly one artifact. No PocketMine server source checkout or project-local Composer installation is required.
 
 ## When to use a virion
 
-This template is intentionally a normal plugin with no virion. Do not add `devtools.yml` or `virions/` unless the plugin intentionally shares a local development package. When that is needed, follow DevTools' [shared virion guide](https://github.com/NhanAZ/DevTools/blob/v1.0.0/docs/shared-virions.md).
+This template is intentionally a normal plugin with no virion. Do not add `devtools.yml` or `virions/` unless the plugin intentionally shares a local development package. When that is needed, follow DevTools' [shared virion guide](https://github.com/NhanAZ/DevTools/blob/v2.0.0/docs/shared-virions.md).
 
 ## Local server development
 
-The template is designed first for the GitHub Actions path. To load the folder locally during development, install the DevTools PHAR in a compatible server and copy this repository below `plugins/`. See the [DevTools Quick Start](https://github.com/NhanAZ/DevTools#quick-start).
+The template is designed first for the GitHub Actions path. To load the folder locally during development, install the DevTools PHAR in Axolotl and copy this repository below `plugins/`. See the [DevTools Quick Start](https://github.com/NhanAZ/DevTools#quick-start).
+
+The reusable workflow is pinned to `v2.0.0` and its required builder input to release commit `37ed21d38b06f8a5778a9d8b201b2362b6a2a5f2`. Keep both aligned when upgrading. The artifact includes `build-metadata.json` with its SHA-256. See the [organization rollout and rollback guide](https://github.com/NhanAZ/DevTools/blob/v2.0.0/docs/org-rollout.md).
