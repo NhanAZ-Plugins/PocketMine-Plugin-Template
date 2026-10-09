@@ -16,7 +16,7 @@ jobs:
   build:
     uses: NhanAZ/DevTools/.github/workflows/build-plugin.yml@v1.0.0
     with:
-      devtools-ref: a74a784b257a2215007d131492319922bf71bd7b
+      devtools-ref: 2d5f6011acb5c478d2201a9987d3687e937217a4
       php-version: '8.1'
       retention-days: 14
     permissions:
