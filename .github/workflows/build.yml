@@ -14,8 +14,9 @@ concurrency:
 
 jobs:
   build:
-    uses: NhanAZ/DevTools/.github/workflows/build-plugin.yml@v1.0.0
+    uses: NhanAZ/DevTools/.github/workflows/build-plugin.yml@324e08681d7503afef223e4f82cc5d5fdef65dda
     with:
+      devtools-ref: 324e08681d7503afef223e4f82cc5d5fdef65dda
       php-version: '8.1'
       retention-days: 14
     permissions:
