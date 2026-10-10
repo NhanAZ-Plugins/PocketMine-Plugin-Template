@@ -3,5 +3,5 @@ version: 0.1.0
 main: StarterPlugin\Main
 api: 5.0.0
 src-namespace-prefix: StarterPlugin
-description: A minimal PocketMine-MP plugin created from the DevTools template
+description: A minimal Axolotl-PM plugin created from the DevTools template
 author: Your name

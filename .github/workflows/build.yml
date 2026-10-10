@@ -1,4 +1,4 @@
-name: Build plugin PHAR
+name: Build and validate template plugin
 
 on:
   push:
@@ -14,9 +14,10 @@ concurrency:
 
 jobs:
   build:
-    uses: NhanAZ/DevTools/.github/workflows/build-plugin.yml@v1.0.0
+    uses: NhanAZ/DevTools/.github/workflows/build-plugin.yml@6606444fc32787a3e50275fdb668c2310e899740
     with:
-      devtools-ref: 2d5f6011acb5c478d2201a9987d3687e937217a4
+      axolotl-ref: dfe0d07e48a9e8d5a4a242fa43ff1cd3b743a955
+      phpstan: max
       php-version: '8.1'
       retention-days: 14
     permissions:
