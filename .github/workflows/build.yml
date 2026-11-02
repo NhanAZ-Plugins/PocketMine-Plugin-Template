@@ -18,6 +18,6 @@ jobs:
     with:
       axolotl-ref: e881fc1bc1c401545baf6bd1f824e41ff3f57bd1
       phpstan: max
-      php-version: '8.1'
+      php-version: '8.4'
     permissions:
       contents: read
